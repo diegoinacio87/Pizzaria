@@ -40,7 +40,7 @@
 
       $pizza["borda"] = $borda["tipo"];
 
-      // resgatando as bordas da pizza
+      // resgatando a borda da pizza
       $massaQuery = $conn->prepare("SELECT * FROM massas WHERE id = :massa_id");
 
       $massaQuery->bindParam(":massa_id", $pizzaData["massa_id"]);
