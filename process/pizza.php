@@ -4,7 +4,7 @@
 
   $method = $_SERVER["REQUEST_METHOD"];
 
-  // Resgate dos dados, montagem do pedido
+  // Resgate dos dados e montagem do pedido
   if($method === "GET") {
 
     $bordasQuery = $conn->query("SELECT * FROM bordas;");
